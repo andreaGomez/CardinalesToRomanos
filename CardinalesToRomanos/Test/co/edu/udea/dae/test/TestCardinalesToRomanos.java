@@ -129,4 +129,88 @@ public class TestCardinalesToRomanos {
 		romano = conversion.convertirCardinalToRomano(50);
 		Assert.assertEquals("L", romano);
 	}
-}
+	
+	@Test
+	public void ConvertirCincuentayCuatroARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(54);
+		Assert.assertEquals("LIV", romano);
+	}
+	
+	@Test
+	public void ConvertirSesentaARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(60);
+		Assert.assertEquals("LX", romano);
+	}
+	
+	@Test
+	public void ConvertirSetentaARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(70);
+		Assert.assertEquals("LXX", romano);
+	}
+	
+	@Test
+	public void ConvertirOchentaARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(80);
+		Assert.assertEquals("LXXX", romano);
+	}
+	
+	@Test
+	public void ConvertirNoventaARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(90);
+		Assert.assertEquals("XC", romano);
+	}
+	
+	@Test
+	public void ConvertirCienARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(100);
+		Assert.assertEquals("C", romano);
+	}
+	
+	@Test
+	public void ConvertirDocientosARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(200);
+		Assert.assertEquals("CC", romano);
+	}
+	
+	@Test
+	public void ConvertirTrecientosARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(300);
+		Assert.assertEquals("CCC", romano);
+	}
+	
+	@Test
+	public void ConvertirCuatrocientosARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(400);
+		Assert.assertEquals("CD", romano);
+	}
+	
+	@Test
+	public void ConvertirQuinientosARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(500);
+		Assert.assertEquals("D", romano);
+	}
+	
+	@Test
+	public void ConvertirSeiscientosARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(600);
+		Assert.assertEquals("DC", romano);
+	}
+	
+	@Test
+	public void ConvertirSetecientosARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(700);
+		Assert.assertEquals("DCC", romano);
+	}
+	
+	@Test
+	public void ConvertirOchocientosARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(800);
+		Assert.assertEquals("DCCC", romano);
+	}
+	
+	@Test
+	public void ConvertirNovecientosARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(900);
+		Assert.assertEquals("CM", romano);
+	}
+	}

@@ -9,10 +9,42 @@ public class CardinalesToRomanos {
 	public String convertirCardinalToRomano(int numero) {
 		int decimas;
 		int unidades;
-		String numeroRomano = "";
-		decimas = numero / 10;
-		unidades = numero%10;		
+		int centesimas;
 		
+		String numeroRomano = "";
+		centesimas = numero/100;
+		decimas = numero/10;
+		unidades = numero%10;	
+		
+		switch (centesimas) {		
+		case 1:
+			numeroRomano = numeroRomano.concat("C");
+			break;
+		case 2:
+			numeroRomano = numeroRomano.concat("CC");
+			break;
+		case 3:
+			numeroRomano = numeroRomano.concat("CCC");
+			break;
+		case 4:
+			numeroRomano = numeroRomano.concat("CD");
+			break;
+		case 5:
+			numeroRomano = numeroRomano.concat("D");
+			break;
+		case 6:
+			numeroRomano = numeroRomano.concat("DC");
+			break;
+		case 7:
+			numeroRomano = numeroRomano.concat("DCC");
+			break;
+		case 8:
+			numeroRomano = numeroRomano.concat("DCCC");
+			break;
+		case 9:
+			numeroRomano = numeroRomano.concat("CM");
+			break;
+		}	
 		switch (decimas) {		
 		case 1:
 			numeroRomano = numeroRomano.concat("X");
@@ -28,6 +60,18 @@ public class CardinalesToRomanos {
 			break;
 		case 5:
 			numeroRomano = numeroRomano.concat("L");
+			break;
+		case 6:
+			numeroRomano = numeroRomano.concat("LX");
+			break;
+		case 7:
+			numeroRomano = numeroRomano.concat("LXX");
+			break;
+		case 8:
+			numeroRomano = numeroRomano.concat("LXXX");
+			break;
+		case 9:
+			numeroRomano = numeroRomano.concat("XC");
 			break;
 		}	
 		
