@@ -208,9 +208,25 @@ public class TestCardinalesToRomanos {
 		Assert.assertEquals("DCCC", romano);
 	}
 	
+
 	@Test
-	public void ConvertirNovecientosARomanoTest() {		
-		romano = conversion.convertirCardinalToRomano(900);
-		Assert.assertEquals("CM", romano);
+	public void Convertir458ARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(458);
+		Assert.assertEquals("CDLVIII", romano);
 	}
+	
+	
+	@Test
+	public void Convertir501ARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(501);
+		Assert.assertEquals("DI", romano);
+	}
+	
+	@Test
+	public void Convertir975ARomanoTest() {		
+		romano = conversion.convertirCardinalToRomano(975);
+		Assert.assertEquals("CMLXXV", romano);
+	}
+	
+	
 	}

@@ -11,14 +11,20 @@ public class CardinalesToRomanos {
 		int unidades;
 		int centesimas;
 		
+		//Se el numero entero que ingresa, por centesimas, decimas y unidades.
 		String numeroRomano = "";
 		centesimas = numero/100;
+		numero=numero-centesimas*100;
 		decimas = numero/10;
+		numero=numero-decimas*10;
 		unidades = numero%10;	
 		
+
+		//Se evalua cada caso y se agrega al resultado
 		switch (centesimas) {		
 		case 1:
 			numeroRomano = numeroRomano.concat("C");
+			
 			break;
 		case 2:
 			numeroRomano = numeroRomano.concat("CC");
